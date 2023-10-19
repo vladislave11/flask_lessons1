@@ -6,7 +6,17 @@
     <link rel="stylesheet" href="/static/pizza.css">
 </head>
 <body>
-<h1> Welcome to my Pizzeria!)</h1>
+<h1> Welcome to my Pizzeria!) OtyePizz666</h1>
+<p> You can order a Pizza! </p>
+<p> Menu </p>
+<ul>
+    {% for menu in pizzas %}
+    <li>
+        <p>{{ menu.dishes }} - {{ menu.price }}€</p>
+    </li>
+
+    {% endfor %}
+</ul>
 <img src="/static/pizza.jpg"
 width="626"
 height="626" />

@@ -1,17 +1,17 @@
 body {
-    background: rgb(100, 7, 241);
+    background: rgb(61, 59, 59);
     margin-top: 50px;
     margin-left: 100px;
 }
 
 h1{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 2.5em;
-    color: firebrick;
+    color: rgb(206, 252, 212);
 }
 
 p {
     font-family: Georgia, Serif;
     font-size: 1.2em;
-    color: rgb(204, 235, 29);
+    color: rgb(223, 201, 201);
 }
