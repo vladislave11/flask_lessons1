@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="/static/style.css"/>
+</head>
+<body>
+{% import "macros.html" as macros %}
+{% include "navigation.html" %}
+{% block content %}
+<h1> Welcome to {{ title }}</h1>
+{% endblock content %}
+<footer>
+    {{ macros.light_or_dark_mode("body") }}
+</footer>
+</body>
+</html>

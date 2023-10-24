@@ -10,7 +10,7 @@
 <p> You can order a Pizza! </p>
 <p> Menu </p>
 <ul>
-    {% for menu in pizzas %}
+    {% for menu in pizzas|sort(attribute="price") %}
     <li>
         <p>{{ menu.dishes }} - {{ menu.price }}€</p>
     </li>
