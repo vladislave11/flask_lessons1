@@ -8,13 +8,13 @@
 <body>
 <h1> Welcome to my Pizzeria!) OtyePizz666</h1>
 <p> You can order a Pizza! </p>
+<a href="/order/">Order</a>
 <p> Menu </p>
 <ul>
     {% for menu in pizzas|sort(attribute="price") %}
     <li>
         <p>{{ menu.dishes }} - {{ menu.price }}€</p>
     </li>
-
     {% endfor %}
 </ul>
 <img src="/static/pizza.jpg"

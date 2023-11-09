@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pizza Order</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='static/pizza.css')  }}">
+</head>
+<body>
+<form action="http://localhost:12320/order" method="post">
+    <p><label for="name">Name of Pizza</label>
+      <input name="pizza_name" type="text"></p>
+    <p><label for="count">Quantity</label>
+      <input name="pizza_count" type="text"></p>
+    <p><label for="address">Delivery Address</label>
+      <input name="address" type="text"></p>
+    <p><label for="phone">Your Phone Number</label>
+      <input name="phone_number" type="text"></p>
+    <p><button type="submit">Order</button></p>
+</form>
+</body>
+</html>
